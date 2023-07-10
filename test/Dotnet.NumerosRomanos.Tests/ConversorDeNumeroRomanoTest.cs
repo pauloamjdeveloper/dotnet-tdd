@@ -6,7 +6,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroZeroEsperado_DeveEntenderOSimboloVazio()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("");
+            var numero = numeroRomano.ConverteNumero("");
             Assert.Equal(0, numero);
         }
 
@@ -14,7 +14,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroUmEsperado_DeveEntenderOSimboloI()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("I");
+            var numero = numeroRomano.ConverteNumero("I");
             Assert.Equal(1, numero);
         }
 
@@ -22,7 +22,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroDoisEsperado_DeveEntenderOSimboloII()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("II");
+            var numero = numeroRomano.ConverteNumero("II");
             Assert.Equal(2, numero);
         }
 
@@ -30,7 +30,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroTresEsperado_DeveEntenderOSimboloIII()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("III");
+            var numero = numeroRomano.ConverteNumero("III");
             Assert.Equal(3, numero);
         }
 
@@ -38,7 +38,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroCincoEsperado_DeveEntenderOSimboloV()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("V");
+            var numero = numeroRomano.ConverteNumero("V");
             Assert.Equal(5, numero);
         }
 
@@ -46,7 +46,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroDezEsperado_DeveEntenderOSimboloX()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("X");
+            var numero = numeroRomano.ConverteNumero("X");
             Assert.Equal(10, numero);
         }
 
@@ -54,7 +54,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroCinquentaEsperado_DeveEntenderOSimboloL()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("L");
+            var numero = numeroRomano.ConverteNumero("L");
             Assert.Equal(50, numero);
         }
 
@@ -62,7 +62,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroCemEsperado_DeveEntenderOSimboloC()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("C");
+            var numero = numeroRomano.ConverteNumero("C");
             Assert.Equal(100, numero);
         }
 
@@ -70,7 +70,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroQuinhentosEsperado_DeveEntenderOSimboloD()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("D");
+            var numero = numeroRomano.ConverteNumero("D");
             Assert.Equal(500, numero);
         }
 
@@ -78,7 +78,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroMilEsperado_DeveEntenderOSimboloM()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("M");
+            var numero = numeroRomano.ConverteNumero("M");
             Assert.Equal(1000, numero);
         }
 
@@ -86,7 +86,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroQuatroEsperado_DeveEntenderOSimboloIV()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("IV");
+            var numero = numeroRomano.ConverteNumero("IV");
             Assert.Equal(4, numero);
         }
 
@@ -94,7 +94,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroTrezeEsperado_DeveEntenderOSimboloXIII()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("XIII");
+            var numero = numeroRomano.ConverteNumero("XIII");
             Assert.Equal(13, numero);
         }
 
@@ -102,7 +102,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroVinteEOitoEsperado_DeveEntenderOSimboloXXVIII()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("XXVIII");
+            var numero = numeroRomano.ConverteNumero("XXVIII");
             Assert.Equal(28, numero);
         }
 
@@ -110,7 +110,7 @@ namespace Dotnet.NumerosRomanos.Tests
         public void ConverteNumero_ValorInteiroTrintaEOitoEsperado_DeveEntenderOSimboloXXXVIII()
         {
             var numeroRomano = new ConversorDeNumeroRomano();
-            int numero = numeroRomano.ConverteNumero("XXXVIII");
+            var numero = numeroRomano.ConverteNumero("XXXVIII");
             Assert.Equal(38, numero);
         }
     }

@@ -4,14 +4,14 @@
     {
         public int ConverteNumero(string numeroEmRomano) 
         {
-            int acumulador = 0;
-            int ultimoValorDaDireita = 0;
+            var acumulador = 0;
+            var ultimoValorDaDireita = 0;
 
             for (int i = numeroEmRomano.Length - 1; i >= 0; i--) 
             {
-                int valorAtual = tabelaDeNumerosRomanos[numeroEmRomano[i].ToString()];
+                var valorAtual = tabelaDeNumerosRomanos[numeroEmRomano[i].ToString()];
 
-                int multiplicador = 1;
+                var multiplicador = 1;
 
                 if (valorAtual < ultimoValorDaDireita) 
                 {
